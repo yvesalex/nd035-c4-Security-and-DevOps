@@ -36,18 +36,30 @@ public class UserControllerTest {
 
     @Test
     public void create_user_happy_path(){
-        when(encoder.encode("testtest")).thenReturn("thisIsHashed");
-        CreateUserRequest r = new CreateUserRequest();
-        r.setUsername("yacadet");
-        r.setPassword("admin");
-        r.setConfirmPassword("admin");
-        ResponseEntity<User> response = userController.createUser(r);
+        when(encoder.encode("#jose123")).thenReturn("1h2hg3hg4gf");
+        CreateUserRequest request = new CreateUserRequest();
+        request.setUsername("jose");
+        request.setPassword("#jose123");
+        request.setConfirmPassword("#jose123");
+        final ResponseEntity<User> response = this.userController.createUser(request);
         assertNotNull(response);
         assertEquals(200, response.getStatusCodeValue());
-        User u = response.getBody();
-        assertNotNull(u);
-        assertEquals(0, u.getId());
-        assertEquals("yacadet", u.getUsername());
-        assertEquals("admin", u.getPassword());
+        User user = response.getBody();
+        assertNotNull(user);
+        assertEquals("jose", user.getUsername());
+        assertEquals("1h2hg3hg4gf", user.getPassword());
+//        when(encoder.encode("admin")).thenReturn("thisIsHashed");
+//        CreateUserRequest r = new CreateUserRequest();
+//        r.setUsername("yacadet");
+//        r.setPassword("admin");
+//        r.setConfirmPassword("admin");
+//        final ResponseEntity<User> response = userController.createUser(r);
+//        assertNotNull(response);
+//        assertEquals(200, response.getStatusCodeValue());
+//        User u = response.getBody();
+//        assertNotNull(u);
+//        assertEquals(0, u.getId());
+//        assertEquals("yacadet", u.getUsername());
+//        assertEquals("thisIsHashed", u.getPassword());
     }
 }
