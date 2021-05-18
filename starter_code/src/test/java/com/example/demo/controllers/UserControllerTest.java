@@ -36,30 +36,58 @@ public class UserControllerTest {
 
     @Test
     public void create_user_happy_path(){
-        when(encoder.encode("#jose123")).thenReturn("1h2hg3hg4gf");
+        when(encoder.encode("#admin123")).thenReturn("1h2hg3hg4gf");
         CreateUserRequest request = new CreateUserRequest();
-        request.setUsername("jose");
-        request.setPassword("#jose123");
-        request.setConfirmPassword("#jose123");
+        request.setUsername("yacadet");
+        request.setPassword("#admin123");
+        request.setConfirmPassword("#admin123");
         final ResponseEntity<User> response = this.userController.createUser(request);
         assertNotNull(response);
         assertEquals(200, response.getStatusCodeValue());
         User user = response.getBody();
         assertNotNull(user);
-        assertEquals("jose", user.getUsername());
+        assertEquals("yacadet", user.getUsername());
         assertEquals("1h2hg3hg4gf", user.getPassword());
-//        when(encoder.encode("admin")).thenReturn("thisIsHashed");
-//        CreateUserRequest r = new CreateUserRequest();
-//        r.setUsername("yacadet");
-//        r.setPassword("admin");
-//        r.setConfirmPassword("admin");
-//        final ResponseEntity<User> response = userController.createUser(r);
-//        assertNotNull(response);
-//        assertEquals(200, response.getStatusCodeValue());
-//        User u = response.getBody();
-//        assertNotNull(u);
-//        assertEquals(0, u.getId());
-//        assertEquals("yacadet", u.getUsername());
-//        assertEquals("thisIsHashed", u.getPassword());
+    }
+
+    @Test
+    public void get_user_by_id(){
+        CreateUserRequest request = new CreateUserRequest();
+        request.setUsername("yacadet");
+        request.setPassword("#admin123");
+        request.setConfirmPassword("#admin123");
+        final ResponseEntity<User> response = this.userController.createUser(request);
+        assertNotNull(response);
+        assertEquals(200, response.getStatusCodeValue());
+        User user = response.getBody();
+        assertNotNull(user);
+        final ResponseEntity<User> response1 = this.userController.findById(0L);
+        User userById = response1.getBody();
+        assertNotNull(userById);
+        assertEquals(user.getId(), userById.getId());
+        assertEquals(user.getUsername(), userById.getUsername());
+    }
+
+    @Test
+    public void get_user_by_username(){
+        when(encoder.encode("#admin123")).thenReturn("1h2hg3hg4gf");
+        CreateUserRequest request = new CreateUserRequest();
+        request.setUsername("yacadet");
+        request.setPassword("#admin123");
+        request.setConfirmPassword("#admin123");
+        ResponseEntity<User> response = this.userController.createUser(request);
+        assertNotNull(response);
+        assertEquals(200, response.getStatusCodeValue());
+        User user = response.getBody();
+        assertNotNull(user);
+        System.out.println("user : " + user.getUsername() + "(" + user.getId() + ")");
+        response = this.userController.findByUserName(user.getUsername());
+        assertNotNull(response);
+        assertEquals(200, response.getStatusCodeValue());
+        User userFound = response.getBody();
+        assertNotNull(userFound);
+        System.out.println("user found: " + userFound.getUsername() + "(" + userFound.getId() + ")");
+//        assertEquals(user.getId(), userById.getId());
+//        assertEquals(user.getUsername(), userById.getUsername());
     }
 }
