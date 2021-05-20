@@ -1,0 +1,26 @@
+2021-05-19 04:32:44,172 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on yacadet-dl with PID 29232 (started by yacad in C:\Users\yacad\Documents\intelliJ projects\nd035-c4-Security-and-DevOps\starter_code)
+2021-05-19 04:32:44,176 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-05-19 04:32:46,294 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-19 04:32:46,295 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-05-19 04:32:46,458 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-19 04:32:46,655 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-05-19 04:32:46,887 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-05-19 04:32:46,978 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-05-19 04:32:47,060 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2021-05-19 04:32:47,062 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2021-05-19 04:32:47,239 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-05-19 04:32:47,421 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-19 04:32:49,522 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 5.939 seconds (JVM running for 6.421)
+2021-05-19 04:33:17,352 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-19 04:33:17,487 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-1] user name set with yacadet
+2021-05-19 04:33:17,683 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-1] Create user success
+2021-05-19 04:33:31,191 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8082-exec-3] HHH000397: Using ASTQueryTranslatorFactory
+2021-05-19 04:33:42,172 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-4] Getting user by username yacadet
+2021-05-19 04:34:05,441 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-5] Add to cart for user yacadet
+2021-05-19 04:34:05,471 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-5] Cart save successfully
+2021-05-19 04:34:16,265 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-6] Save order succes for user yacadet
+2021-05-19 04:34:26,091 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-7] History succes for user yacadet
+2021-05-19 04:34:35,118 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-8] Getting all items
+2021-05-19 18:41:43,056 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h53m7s653ms462µs100ns).

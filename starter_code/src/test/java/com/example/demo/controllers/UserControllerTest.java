@@ -12,8 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -52,42 +51,25 @@ public class UserControllerTest {
 
     @Test
     public void get_user_by_id(){
-        CreateUserRequest request = new CreateUserRequest();
-        request.setUsername("yacadet");
-        request.setPassword("#admin123");
-        request.setConfirmPassword("#admin123");
-        final ResponseEntity<User> response = this.userController.createUser(request);
-        assertNotNull(response);
-        assertEquals(200, response.getStatusCodeValue());
-        User user = response.getBody();
-        assertNotNull(user);
-        final ResponseEntity<User> response1 = this.userController.findById(0L);
-        User userById = response1.getBody();
-        assertNotNull(userById);
-        assertEquals(user.getId(), userById.getId());
-        assertEquals(user.getUsername(), userById.getUsername());
+        User user = new User();
+        user.setUsername("yacadet");
+        user.setPassword("admin123");
+        when(userRepository.findById(0L)).thenReturn(java.util.Optional.of(user));
+        ResponseEntity<User> userResponseEntity = userController.findById(0L);
+        assertTrue(userResponseEntity.getStatusCode().is2xxSuccessful());
+        assertEquals("yacadet", userResponseEntity.getBody().getUsername());
+        assertEquals("admin123", userResponseEntity.getBody().getPassword());
     }
 
     @Test
     public void get_user_by_username(){
-        when(encoder.encode("#admin123")).thenReturn("1h2hg3hg4gf");
-        CreateUserRequest request = new CreateUserRequest();
-        request.setUsername("yacadet");
-        request.setPassword("#admin123");
-        request.setConfirmPassword("#admin123");
-        ResponseEntity<User> response = this.userController.createUser(request);
-        assertNotNull(response);
-        assertEquals(200, response.getStatusCodeValue());
-        User user = response.getBody();
-        assertNotNull(user);
-        System.out.println("user : " + user.getUsername() + "(" + user.getId() + ")");
-        response = this.userController.findByUserName(user.getUsername());
-        assertNotNull(response);
-        assertEquals(200, response.getStatusCodeValue());
-        User userFound = response.getBody();
-        assertNotNull(userFound);
-        System.out.println("user found: " + userFound.getUsername() + "(" + userFound.getId() + ")");
-//        assertEquals(user.getId(), userById.getId());
-//        assertEquals(user.getUsername(), userById.getUsername());
+        User user = new User();
+        user.setUsername("yacadet");
+        user.setPassword("admin123");
+        when(userRepository.findByUsername("yacadet")).thenReturn(user);
+        ResponseEntity<User> userResponseEntity = userController.findByUserName("yacadet");
+        assertTrue(userResponseEntity.getStatusCode().is2xxSuccessful());
+        assertEquals("yacadet", userResponseEntity.getBody().getUsername());
+        assertEquals("admin123", userResponseEntity.getBody().getPassword());
     }
 }
