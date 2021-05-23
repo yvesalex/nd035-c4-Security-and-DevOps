@@ -56,26 +56,38 @@ public class UserController {
 	}
 
 	@PostMapping("/create")
-	public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
-		User user = new User();
-		user.setUsername(createUserRequest.getUsername());
-		logger.info("user name set with " + createUserRequest.getUsername());
-		Cart cart = new Cart();
-		cartRepository.save(cart);
-		user.setCart(cart);
+	public ResponseEntity<?> createUser(@RequestBody CreateUserRequest createUserRequest) {
+		try{
+			User user = new User();
+			if(userRepository.findByUsername(createUserRequest.getUsername()) != null) {
+				logger.error("Error creating duplicate user..." + createUserRequest.getUsername());
+				throw new Exception("This user already exists.");
+			}
+			user.setUsername(createUserRequest.getUsername());
+			logger.info("user name set with " + createUserRequest.getUsername());
+			Cart cart = new Cart();
+			cartRepository.save(cart);
+			user.setCart(cart);
 
-		if(createUserRequest.getPassword().length() < 7 ||
-		!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())){
-			logger.error("Error creating user..." + createUserRequest.getUsername());
-			return ResponseEntity.badRequest().build();
+			if(createUserRequest.getPassword().length() < 7 ||
+					!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())){
+				logger.error("Error creating user..." + createUserRequest.getUsername());
+				throw new Exception("Passwords must match and length must be 7 or more characters.");
+			}
+			user.setSalt(userDetailsService.createSalt());
+			userDetailsService.get_SecurePassword("SHA-256", createUserRequest.getPassword(), user.getSalt());
+			user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
+
+			userRepository.save(user);
+			logger.info("Create user success", createUserRequest.getUsername());
+			return ResponseEntity.ok(user);
 		}
-		user.setSalt(userDetailsService.createSalt());
-		userDetailsService.get_SecurePassword("SHA-256", createUserRequest.getPassword(), user.getSalt());
-		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
-
-		userRepository.save(user);
-		logger.info("Create user success", createUserRequest.getUsername());
-		return ResponseEntity.ok(user);
+		catch(Exception e){
+			logger.error("Error on create user " + createUserRequest.getUsername());
+			return ResponseEntity.badRequest().body(
+					"Error on create user " + createUserRequest.getUsername()
+					+ ": " + e.getMessage());
+		}
 	}
 	
 }

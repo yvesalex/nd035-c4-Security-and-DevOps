@@ -1,2 +1,195 @@
-2021-05-20 03:35:04,221 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h16m28s812ms854µs500ns).
-2021-05-20 19:16:33,760 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h45m8s367ms51µs700ns).
+2021-05-21 03:49:10,120 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on yacadet-dl with PID 9760 (started by yacad in C:\Users\yacad\Documents\intelliJ projects\nd035-c4-Security-and-DevOps\starter_code)
+2021-05-21 03:49:10,134 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-05-21 03:49:12,138 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-21 03:49:12,139 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-05-21 03:49:12,337 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-21 03:49:12,525 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-05-21 03:49:12,735 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-05-21 03:49:12,815 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-05-21 03:49:12,913 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2021-05-21 03:49:12,916 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2021-05-21 03:49:13,135 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-05-21 03:49:13,318 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-21 03:49:15,578 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 5.959 seconds (JVM running for 6.574)
+2021-05-21 03:49:22,951 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-21 03:49:23,120 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8082-exec-1] HHH000397: Using ASTQueryTranslatorFactory
+2021-05-21 03:49:23,255 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-1] user name set with yacadet
+2021-05-21 03:49:23,412 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-1] Create user success
+2021-05-21 03:49:28,631 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-3] Error creating duplicate user...yacadet
+2021-05-21 03:54:49,252 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on yacadet-dl with PID 8736 (started by yacad in C:\Users\yacad\Documents\intelliJ projects\nd035-c4-Security-and-DevOps\starter_code)
+2021-05-21 03:54:49,260 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-05-21 03:54:51,020 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-21 03:54:51,021 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-05-21 03:54:51,176 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-21 03:54:51,346 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-05-21 03:54:51,510 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-05-21 03:54:51,584 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-05-21 03:54:51,647 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2021-05-21 03:54:51,649 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2021-05-21 03:54:51,789 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-05-21 03:54:51,949 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-21 03:54:53,703 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 4.919 seconds (JVM running for 5.402)
+2021-05-21 03:55:00,066 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-21 03:55:00,213 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8082-exec-1] HHH000397: Using ASTQueryTranslatorFactory
+2021-05-21 03:55:00,324 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-1] user name set with yacadet
+2021-05-21 03:55:00,454 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-1] Create user success
+2021-05-21 03:55:03,894 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-3] Error creating duplicate user...yacadet
+2021-05-21 03:55:36,763 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on yacadet-dl with PID 38444 (started by yacad in C:\Users\yacad\Documents\intelliJ projects\nd035-c4-Security-and-DevOps\starter_code)
+2021-05-21 03:55:36,767 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-05-21 03:55:38,508 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-21 03:55:38,509 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-05-21 03:55:38,677 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-21 03:55:38,850 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-05-21 03:55:39,030 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-05-21 03:55:39,106 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-05-21 03:55:39,177 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2021-05-21 03:55:39,179 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2021-05-21 03:55:39,319 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-05-21 03:55:39,469 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-21 03:55:41,364 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 5.076 seconds (JVM running for 5.58)
+2021-05-21 03:55:56,522 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-21 03:55:56,654 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8082-exec-2] HHH000397: Using ASTQueryTranslatorFactory
+2021-05-21 03:55:56,764 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-2] user name set with yacadet
+2021-05-21 03:55:56,910 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-2] Create user success
+2021-05-21 03:57:14,428 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-5] Error creating duplicate user...yacadet
+2021-05-21 03:58:19,184 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-7] Save order succes for user yacadet
+2021-05-21 03:59:22,153 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-10] Save order succes for user yacadet
+2021-05-21 04:01:22,863 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8082-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+com.auth0.jwt.exceptions.JWTDecodeException: The string 'ȝ\�������[Ȏ���LL��' doesn't have a valid JSON format.
+	at com.auth0.jwt.impl.JWTParser.decodeException(JWTParser.java:75)
+	at com.auth0.jwt.impl.JWTParser.parseHeader(JWTParser.java:51)
+	at com.auth0.jwt.JWTDecoder.<init>(JWTDecoder.java:47)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:282)
+	at com.example.demo.security.JWTAuthenticationVerificationFilter.getAuthentication(JWTAuthenticationVerificationFilter.java:48)
+	at com.example.demo.security.JWTAuthenticationVerificationFilter.doFilterInternal(JWTAuthenticationVerificationFilter.java:38)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-21 04:04:18,992 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-7] Error creating duplicate user...yacadet
+2021-05-21 04:04:31,411 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-9] user name set with yves
+2021-05-21 04:04:31,411 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-9] Error creating user...yves
+2021-05-21 04:06:56,709 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-1] user name set with yves
+2021-05-21 04:06:56,711 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-1] Error creating user...yves
+2021-05-21 04:07:20,776 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on yacadet-dl with PID 42464 (started by yacad in C:\Users\yacad\Documents\intelliJ projects\nd035-c4-Security-and-DevOps\starter_code)
+2021-05-21 04:07:20,778 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-05-21 04:07:22,493 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-21 04:07:22,493 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-05-21 04:07:22,652 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-21 04:07:22,822 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-05-21 04:07:22,999 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-05-21 04:07:23,075 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-05-21 04:07:23,146 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2021-05-21 04:07:23,148 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2021-05-21 04:07:23,305 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-05-21 04:07:23,453 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-21 04:07:25,739 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 5.433 seconds (JVM running for 5.923)
+2021-05-21 04:07:28,825 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-21 04:07:28,972 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8082-exec-2] HHH000397: Using ASTQueryTranslatorFactory
+2021-05-21 04:07:29,070 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-2] user name set with yves
+2021-05-21 04:07:29,111 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-2] Error creating user...yves
+2021-05-21 04:09:02,404 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-4] user name set with yacadet
+2021-05-21 04:09:02,510 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-4] Create user success
+2021-05-21 04:09:05,886 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-5] Error creating duplicate user...yacadet
+2021-05-21 04:09:16,299 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on yacadet-dl with PID 45140 (started by yacad in C:\Users\yacad\Documents\intelliJ projects\nd035-c4-Security-and-DevOps\starter_code)
+2021-05-21 04:09:16,301 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-05-21 04:09:18,031 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-21 04:09:18,032 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-05-21 04:09:18,185 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-21 04:09:18,344 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-05-21 04:09:18,515 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-05-21 04:09:18,596 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-05-21 04:09:18,663 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2021-05-21 04:09:18,665 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2021-05-21 04:09:18,801 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-05-21 04:09:18,950 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-21 04:09:20,844 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 5.009 seconds (JVM running for 5.518)
+2021-05-21 04:09:30,711 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-21 04:09:30,863 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8082-exec-2] HHH000397: Using ASTQueryTranslatorFactory
+2021-05-21 04:09:30,979 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-2] user name set with yacadet
+2021-05-21 04:09:31,162 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-2] Create user success
+2021-05-21 04:09:32,446 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-3] Error creating duplicate user...yacadet
+2021-05-21 04:09:32,446 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-3] Error on create user yacadet
+2021-05-21 04:11:14,141 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-5] user name set with yves
+2021-05-21 04:11:14,143 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-5] Error creating user...yves
+2021-05-21 04:12:09,055 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on yacadet-dl with PID 17420 (started by yacad in C:\Users\yacad\Documents\intelliJ projects\nd035-c4-Security-and-DevOps\starter_code)
+2021-05-21 04:12:09,058 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-05-21 04:12:10,809 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-05-21 04:12:10,810 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-05-21 04:12:10,960 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2021-05-21 04:12:11,122 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-05-21 04:12:11,277 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-05-21 04:12:11,349 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-05-21 04:12:11,410 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2021-05-21 04:12:11,412 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2021-05-21 04:12:11,546 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-05-21 04:12:11,691 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-21 04:12:13,371 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 4.788 seconds (JVM running for 5.312)
+2021-05-21 04:12:23,247 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-21 04:12:23,368 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8082-exec-1] HHH000397: Using ASTQueryTranslatorFactory
+2021-05-21 04:12:23,468 INFO com.example.demo.SareetaApplication [http-nio-8082-exec-1] user name set with yacadet
+2021-05-21 04:12:23,503 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-1] Error creating user...yacadet
+2021-05-21 04:12:23,504 ERROR com.example.demo.SareetaApplication [http-nio-8082-exec-1] Error on create user yacadet

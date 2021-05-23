@@ -40,10 +40,10 @@ public class UserControllerTest {
         request.setUsername("yacadet");
         request.setPassword("#admin123");
         request.setConfirmPassword("#admin123");
-        final ResponseEntity<User> response = this.userController.createUser(request);
+        final ResponseEntity<?> response = this.userController.createUser(request);
         assertNotNull(response);
         assertEquals(200, response.getStatusCodeValue());
-        User user = response.getBody();
+        User user = (User) response.getBody();
         assertNotNull(user);
         assertEquals("yacadet", user.getUsername());
         assertEquals("1h2hg3hg4gf", user.getPassword());
